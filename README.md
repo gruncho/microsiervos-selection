@@ -1,5 +1,6 @@
 # microsiervos-selection
-Estoy utilizando (SASS)[http://sass-lang.com/], instalar ir a la carpeta `assets` y escribir:
+El código está hecho con [BEM](https://en.bem.info/) y [SASS](http://sass-lang.com[), ir al directorio **microsiervos-selction < assets** y escribir:
+
 ```
 sass -wc scss
 ```
