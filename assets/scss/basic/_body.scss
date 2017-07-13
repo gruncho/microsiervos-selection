@@ -1,0 +1,16 @@
+// Example of the flex system for alvy@microsiervos.com
+//
+// Licensed under GPL v3 2017.
+//
+// @author Alex M. Gorgal <alex@worldx3.com> aka @gruncho
+
+@import 'variables/colors';
+
+$body-background-color: $original-white;
+$body-font-color: $black-solid;
+
+body {
+	background: $body-background-color;
+	color: $body-font-color;
+	font-family: Helvetica, sans-serif; // delete
+}

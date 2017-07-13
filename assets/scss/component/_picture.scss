@@ -1,0 +1,20 @@
+// Example of the flex system for alvy@microsiervos.com
+//
+// Licensed under GPL v3 2017.
+//
+// @author Alex M. Gorgal <alex@worldx3.com> aka @gruncho
+
+@import 'variables/colors';
+
+$picture-background-color: $original-white;
+$picture-border-color: $picture-background-color;
+
+.picture {
+	background: $picture-background-color;
+	overflow: hidden;
+	border: 24px solid $picture-border-color;
+
+	&_img {
+		margin: 0 auto; // shame (revise)
+	}
+}

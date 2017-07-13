@@ -1,0 +1,65 @@
+// Example of the flex system for alvy@microsiervos.com
+//
+// Licensed under GPL v3 2017.
+//
+// @author Alex M. Gorgal <alex@worldx3.com> aka @gruncho
+
+@import 'variables/dimensions';
+
+$section-cards-with: $row-width;
+$section-cards-max-with: $row-max-width;
+$section-cards-article-card-margin-bottom: 48px;
+
+.section-cards {
+	align-items: stretch;
+	display: flex;
+	flex-flow: column wrap;
+	max-width: $section-cards-max-with;
+	margin: 0 auto;
+	overflow: hidden; // wrap
+	width: $section-cards-with;
+}
+
+.section-cards {
+	.article-card__wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+// mobile first
+
+@media only screen and (min-width: $dimension-mobile){
+	.section-cards {		
+		flex-flow: row wrap;
+
+		.article-card {
+			flex: 0 1 50%;
+			margin-bottom: $section-cards-article-card-margin-bottom;
+		}
+	}
+}
+
+@media only screen and (min-width: $dimension-tablet){
+	.section-cards {				
+		.article-card {
+			flex: 0 1 25%;
+		}
+	}
+}
+
+@media only screen and (min-width: $dimension-desktop){
+	.section-cards {		
+		.article-card {
+			flex: 0 1 20%;
+		}
+	}
+}
+
+@media only screen and (min-width: $dimension-fulldesktop){
+	.section-cards {		
+		.article-card {
+			flex: 0 1 10%;
+		}
+	}
+}

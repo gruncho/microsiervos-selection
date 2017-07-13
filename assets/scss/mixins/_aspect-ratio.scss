@@ -1,0 +1,26 @@
+// Example of the flex system for alvy@microsiervos.com
+//
+// Licensed under GPL v3 2017.
+// github.com/gruncho/aspect-ratio
+//
+// @author Alex M. Gorgal <alex@worldx3.com> aka @gruncho
+
+@mixin aspect-ratio($width, $height) {
+  display: block;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: ($height / $width) * 100%;
+    width: 100%;
+  }
+  > img {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

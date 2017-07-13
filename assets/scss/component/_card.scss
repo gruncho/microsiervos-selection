@@ -1,0 +1,78 @@
+// Example of the flex system for alvy@microsiervos.com
+//
+// Licensed under GPL v3 2017.
+//
+// @author Alex M. Gorgal <alex@worldx3.com> aka @gruncho
+
+@import 'mixins/aspect-ratio';
+@import 'variables/colors';
+@import 'variables/dimensions';
+
+$article-card-wrapper-padding-bottom-column: 24px;
+$article-card-wrapper-padding-bottom-row: 48px;
+$article-card-title-font-size: 24px;
+$article-card-title-color: $blue-active;
+$article-card-link-button-background: $orange-corporative;
+$article-card-link-button-color: $black-solid;
+$article-card-link-button-padding: 12px 48px;
+$article-card-margin-items: 24px;
+
+// format card
+
+.article-card {
+	font-size: 14px;
+	position: relative;
+
+	&__wrapper {
+		box-sizing: border-box;
+		height: 100%;
+		padding-bottom: $article-card-wrapper-padding-bottom-column;
+	}
+
+	&__thumb,
+	&__title,
+	&__paragraph {
+		margin-bottom: $article-card-margin-items;
+	}
+
+	&__title {
+		color: $article-card-title-color;
+		font-size: $article-card-title-font-size;
+		font-weight: bold;
+	}
+
+	&__paragraph {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	&__nav-button {
+		width: 100%;
+	}
+
+	&__link-button {
+		background: $article-card-link-button-background;
+		color: $article-card-link-button-color;
+		font-weight: bold;
+		display: inline-block;
+		padding: $article-card-link-button-padding;
+		text-decoration: none;
+	}
+
+	.picture {
+		@include aspect-ratio(1, 1.35); // test origin thumbnails
+	}
+}
+
+// mobile first
+
+@media only screen and (min-width: $dimension-mobile){
+	.article-card__wrapper {
+		padding-bottom: $article-card-wrapper-padding-bottom-row;
+	}
+
+	.article-card__nav-button {
+		bottom: 0;
+		position: absolute;
+	}
+}

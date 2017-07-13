@@ -1,0 +1,34 @@
+// Example of the flex system for alvy@microsiervos.com
+//
+// Licensed under GPL v3 2017.
+//
+// @author Alex M. Gorgal <alex@worldx3.com> aka @gruncho
+
+// basic
+
+@import 
+	'basic/reset',
+	'basic/body'
+;
+
+// variables
+
+@import 
+	'variables/colors',
+	'variables/dimensions'
+;
+
+// mixins
+
+@import 'mixins/aspect-ratio';
+
+// component
+
+@import 
+	'component/card',
+	'component/picture'
+;
+
+// composition
+
+@import 'composition/cards';
