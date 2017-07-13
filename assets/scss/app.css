@@ -99,6 +99,7 @@ body {
   align-items: stretch;
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   max-width: calc($the-number * 90);
   margin: 0 auto;
   overflow: hidden;
