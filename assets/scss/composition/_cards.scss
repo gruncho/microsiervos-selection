@@ -10,6 +10,7 @@
 $section-cards-with: $row-width;
 $section-cards-max-with: $row-max-width;
 $section-cards-article-card-margin-bottom: 48px;
+$section-cards-article-card-margin: 25px;
 
 .section-cards {
 	align-items: stretch;
@@ -20,12 +21,13 @@ $section-cards-article-card-margin-bottom: 48px;
 	margin: 0 auto;
 	overflow: hidden; // wrap
 	width: $section-cards-with;
-}
 
-.section-cards {
-	.article-card__wrapper {
-		width: 90%;
-		margin: 0 auto;
+	.article-card {
+		border: 1px solid #f0f0f0;
+		box-sizing: border-box;
+		margin-bottom: $section-cards-article-card-margin;
+		margin-right: calc(#{$section-cards-article-card-margin} / 2);
+		margin-left: calc(#{$section-cards-article-card-margin} / 2);
 	}
 }
 
@@ -36,8 +38,7 @@ $section-cards-article-card-margin-bottom: 48px;
 		flex-flow: row wrap;
 
 		.article-card {
-			flex: 0 1 50%;
-			margin-bottom: $section-cards-article-card-margin-bottom;
+			flex: 0 1 40%;
 		}
 	}
 }
@@ -45,7 +46,7 @@ $section-cards-article-card-margin-bottom: 48px;
 @media only screen and (min-width: $dimension-tablet){
 	.section-cards {				
 		.article-card {
-			flex: 0 1 25%;
+			flex: 0 1 30%;
 		}
 	}
 }

@@ -9,8 +9,10 @@
 @import 'variables/colors';
 @import 'variables/dimensions';
 
+$article-card-content-padding: 0 20px;
 $article-card-wrapper-padding-bottom-column: 24px;
 $article-card-wrapper-padding-bottom-row: 48px;
+$article-card-thumb-border: 1px solid #f0f0f0;
 $article-card-title-font-size: 24px;
 $article-card-title-color: $blue-active;
 $article-card-link-button-background: $orange-corporative;
@@ -28,6 +30,10 @@ $article-card-margin-items: 24px;
 		box-sizing: border-box;
 		height: 100%;
 		padding-bottom: $article-card-wrapper-padding-bottom-column;
+	}
+
+	&__content {
+		padding: $article-card-content-padding;
 	}
 
 	&__thumb,
@@ -61,7 +67,7 @@ $article-card-margin-items: 24px;
 	}
 
 	.picture {
-		@include aspect-ratio(1, 1.35); // test origin thumbnails
+		@include aspect-ratio(1, 1); // test origin thumbnails
 	}
 }
 
