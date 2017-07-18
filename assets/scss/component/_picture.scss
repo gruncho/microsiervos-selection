@@ -13,7 +13,6 @@ $picture-border-color: $picture-background-color;
 .picture {
 	background: $picture-background-color;
 	overflow: hidden;
-	border: 24px solid $picture-border-color;
 
 	&_img {
 		margin: 0 auto; // shame (revise)
