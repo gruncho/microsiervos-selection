@@ -5,7 +5,7 @@ El código está hecho con [BEM](https://en.bem.info/) y [SASS](http://sass-lang
 sass -wc scss
 ```
 
-## Pendiente
+## Pendiente
 
 * Object fit en IE
-* Prefijos navegadores
+* Prefijo navegadores
